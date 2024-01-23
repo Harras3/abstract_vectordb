@@ -67,11 +67,5 @@ class llama_index_db:
         return ans
 
 
-def document_load(name,ftype):
-    if ftype=="pdf":
-        text = load_pdf(name)
-    elif ftype=="ppt":
-        text = load_pdf(name)
-
 
 
