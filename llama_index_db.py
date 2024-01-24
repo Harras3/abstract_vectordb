@@ -13,9 +13,11 @@ class llama_index_db:
     query_engine=False
     sentence_window_engine=''
     sentence_index=''
+    
     def __init__ (self): 
         return 
-    
+
+    #This function will add all the text chunks passed into vector db
     def insert_in_db(self,
     documents,
     embed_model="local:BAAI/bge-small-en-v1.5",
@@ -49,7 +51,7 @@ class llama_index_db:
 
     
  
-    
+    #This function will return the document which is most similar to the query
     def query(self, query,similarity_top_k=6, rerank_top_n=2
     ):
         
